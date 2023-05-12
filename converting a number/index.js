@@ -1,4 +1,10 @@
-let number =3600;
-let hours=Math.floor(number/3600);
+function time_convert(number)
+{
 
-console.log(hours+"hours");
+// let number =3630;
+let hours=Math.floor(number/60);
+let minutes=Math.floor(number%60);
+return hours + ":" + minutes;
+}
+
+console.log(time_convert(3630));
